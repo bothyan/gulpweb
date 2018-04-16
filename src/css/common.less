@@ -1,0 +1,96 @@
+body, h1, h2, h3, h4, h5, h6, p, ul, li, div,span,a,input{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box; 
+}
+img{
+    border: 0;
+}
+li{ 
+    list-style: none;
+}
+.displaynone{
+    display: none !important;
+}
+body{
+    font-family:  "PingFangSC-Light","PingFangSC", "Microsoft YaHei","Helvetica Neue", Helvetica,"Hiragino Sans GB",  "\5FAE\8F6F\96C5\9ED1", Arial, sans-serif;
+}
+button,input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    font-family:  "PingFangSC-Light","PingFangSC", "Microsoft YaHei","Helvetica Neue", Helvetica,"Hiragino Sans GB",  "\5FAE\8F6F\96C5\9ED1", Arial, sans-serif;
+}
+input, textarea {
+    font-family:  "PingFangSC-Light","PingFangSC", "Microsoft YaHei","Helvetica Neue", Helvetica,"Hiragino Sans GB",  "\5FAE\8F6F\96C5\9ED1", Arial, sans-serif;
+}
+
+button,a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.clearfix {
+    &:after {
+        height: 0;
+        content: " ";
+        display: block;
+        visibility: hidden;
+        font-size: 0;
+        clear: both;
+    }
+    clear: both;
+    overflow: hidden;
+}
+
+.page{
+    width:750px;
+    position:absolute;
+    left:50%;
+    top:0;
+    overflow:hidden;
+    margin-left:-375px;
+}
+
+body {
+  font-family:"微软雅黑";
+}
+.textOverflow() {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.lineHeight(@val){
+    height:@val;
+    line-height:@val;
+}
+.opacity(@val) {
+    @ie_val: @val * 100;
+    opacity: @val;
+    filter: ~"alpha(opacity=@{ie_val})";
+}
+.transform(@val) {
+    -webkit-transform: @val;
+    -moz-transform: @val;
+    -ms-transform: @val;
+    -o-transform: @val;
+    transform: @val;
+}
+.animation(@val) {
+    -webkit-animation: @val;
+    -moz-animation: @val;
+    -ms-animation: @val;
+    -o-animation: @val;
+    animation: @val;
+} 
+.transition(@val) {
+    -webkit-transition: @val;
+    -moz-transition: @val;
+    -ms-transition: @val;
+    -o-transition: @val;
+    transition: @val;
+}

@@ -1,0 +1,31 @@
+{
+  "name": "mxys_web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp dev",
+    "build": "gulp build"
+  },
+  "repository": {
+    "type": "svn",
+    "url": "svn://221.122.57.122:3692/repos/h5 "
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "browsersync-ssi": "^0.2.4",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-html-ssi": "0.0.92",
+    "gulp-less": "^3.3.2",
+    "gulp-replace": "^0.6.1",
+    "gulp-uglify": "^3.0.0",
+    "minimist": "^1.2.0"
+  },
+  "author": "bothyan",
+  "license": "ISC",
+  "dependencies": {
+    "http-proxy-middleware": "^0.17.4"
+  }
+}
