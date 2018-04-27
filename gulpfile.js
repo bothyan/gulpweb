@@ -8,6 +8,14 @@ var http = require('http');
 var fs = require('fs');
 var ssi = require('browsersync-ssi');
 var includer = require('gulp-html-ssi');
+
+//代理
+/*var proxyMiddleware = require('http-proxy-middleware');
+var proxy = proxyMiddleware('/api', {
+  target: '',//端口域名
+  changeOrigin: true
+});*/
+
 //服务器域名根路径
 var BASE_PATH = (__dirname + '/' + 'src').replace(/\\/g, '/');
 
